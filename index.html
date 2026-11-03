@@ -56,6 +56,17 @@ ul.x,ul.ck{padding:0;margin:0}
 footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--bd)}
 .bar .btn{flex:1;padding:12px 10px}
+
+.photo{display:block;width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:18px;border:1px solid var(--bd)}
+.hero-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;padding-top:12px}
+.hero-photo{height:360px;overflow:hidden;border-radius:20px;box-shadow:0 14px 34px rgba(10,45,22,.12)}
+.photo-panel{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.photo-panel .photo{min-height:300px;max-height:360px}
+.photo-caption{background:var(--gl);border:1px solid var(--bd);border-radius:14px;padding:18px;color:var(--mu);font-size:.92rem}
+.hospitality-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-top:20px}
+.hospitality-layout .photo{height:300px}
+@media(max-width:700px){.hero-layout,.photo-panel,.hospitality-layout{grid-template-columns:1fr}.hero-photo{height:250px}.photo-panel .photo{min-height:220px;max-height:260px}.photo-caption{margin-top:-8px}}
+
 </style>
 </head>
 <body>
@@ -63,9 +74,11 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <header class="hero">
 <div class="w">
 <div class="top"><div class="logo">TEE’S CONSULTS<small>Connecting employers &amp; employees</small></div></div>
+<div class="hero-layout"><div>
 <span class="tag">Audit · Recruitment · Training · Business Setup</span>
 <h1>Is your business <span class="g">losing money</span> without you knowing?</h1>
 <p class="mu" style="font-size:1.1rem;max-width:620px">Not because sales are low. Not because customers are scarce. But because of hidden leakages, weak controls and operational inefficiencies. At Tee’s Consults we don’t just audit, we set up a system that works.</p>
+</div><div class="hero-photo"><img class="photo" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Professionals collaborating in a modern business office" loading="eager"></div></div>
 </div>
 </header>
 
@@ -113,11 +126,12 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 </section>
 
 <section>
-<div class="w two">
+<div class="w photo-panel">
 <div>
 <h2>Need a qualified, professional, experienced and certified Auditor and internal control expert?</h2>
 <p style="font-size:1.1rem"><b>We are like doctors.</b> A doctor does a check-up to find sickness. We do auditing to find where your business is losing money.</p><p class="mu">Stop business leakages. Detect fraud. Protect profits.</p>
 </div>
+<img class="photo" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Business professional reviewing financial documents and figures" loading="lazy">
 <ul class="ck">
 <li>Corporate &amp; General Auditing</li>
 <li>Internal Control Assessment</li>
@@ -130,12 +144,13 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 </section>
 
 <section class="alt">
-<div class="w two">
+<div class="w photo-panel">
 <div>
 <h2>Looking for staff, or looking for a job?</h2>
 <p class="mu">Hiring doesn’t have to be stressful. We provide reliable staffing solutions for businesses and organisations ready to grow. Whether you need top talent or you are searching for your next opportunity, Tee’s Consults is your trusted partner in recruitment.</p>
 <p><b>Smart hiring starts with Tee’s Consults.</b></p>
 </div>
+<img class="photo" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Professionals meeting and discussing work together" loading="lazy">
 <div class="card">
 <h3>For employers</h3>
 <p style="margin-bottom:14px">Recruitment, interview selection, onboarding and staff training, so you get the right team.</p>
@@ -148,11 +163,13 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <section>
 <div class="w">
 <h2>Elevate your <span class="g">hospitality business</span></h2>
+<div class="hospitality-layout"><div>
 <p class="mu">Professional solutions tailored for your growth and excellence. Tee’s Hospitality Management is committed to helping your business thrive, run smoothly and efficiently, and stand out.</p>
 <div class="chips">
 <span>Building</span><span>Setting Up</span><span>Rebranding</span><span>Recruitment</span><span>Staff Training</span><span>Internal Control &amp; Audit</span><span>Operational Management</span><span>Policy Implementation</span>
 </div>
 <p style="margin-top:18px"><b>Your success starts with the right team, the right strategies, and the right structure.</b></p>
+</div><img class="photo" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Well-appointed hotel interior and hospitality space" loading="lazy"></div>
 </div>
 </section>
 
