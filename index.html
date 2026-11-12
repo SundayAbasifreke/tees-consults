@@ -52,7 +52,7 @@ ul.x,ul.ck{padding:0;margin:0}
 .cinfo div{background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:12px 16px}
 .cinfo b{display:block;font-size:.78rem;color:var(--mu);text-transform:uppercase;letter-spacing:.04em}
 .cinfo a{color:var(--tx);text-decoration:none;font-weight:600;word-break:break-word}
-.fm{display:grid;gap:14px;text-align:left;max-width:520px;margin:24px auto 0}.fm label{font-weight:600;font-size:.92rem;display:grid;gap:6px}.fm input,.fm select,.fm textarea{font:inherit;font-weight:400;padding:12px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);width:100%}.fm .btn{width:100%;cursor:pointer;font-family:inherit}.or{margin:18px 0 0;color:var(--mu);font-weight:600}.err{color:var(--red);font-size:.9rem;margin:0;min-height:1.2em}
+.fm{display:grid;gap:14px;text-align:left;max-width:520px;margin:24px auto 0}.fm label{font-weight:600;font-size:.92rem;display:grid;gap:6px}.fm input,.fm select,.fm textarea{font:inherit;font-weight:400;padding:12px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);width:100%}.fm .btn{width:100%;cursor:pointer;font-family:inherit}.fm .btn[disabled]{opacity:.6;cursor:wait}.or{margin:18px 0 0;color:var(--mu);font-weight:600}.err{color:var(--red);font-size:.9rem;margin:0;min-height:1.2em}
 footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--bd)}
 .bar .btn{flex:1;padding:12px 10px}
@@ -68,6 +68,25 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 @media(max-width:700px){.hero-layout,.photo-panel,.hospitality-layout{grid-template-columns:1fr}.hero-photo{height:250px}.photo-panel .photo{min-height:220px;max-height:260px}.photo-caption{margin-top:-8px}}
 
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1142456525002629');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1142456525002629&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
 </head>
 <body>
 
@@ -107,7 +126,7 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <h2>What we do for your business</h2>
 <p class="mu">Everything you need to hire, train, set up, control and grow, in one place.</p>
 <div class="grid">
-<div class="card"><h3>Recruitment</h3><p>Are you a business looking for staff? Or an employee looking for a job? We connect employers and employees.</p></div>
+<div class="card"><h3>Recruitment</h3><p>We recruit, background-check and vet, and we place trained staff in your business.</p></div>
 <div class="card"><h3>Staff Training</h3><p>We train your staff to be at their best professionalism at work, covering all your work policies and their roles.</p></div>
 <div class="card"><h3>Onboarding &amp; Interview Selection</h3><p>We help you select the right people at interview and bring them in properly.</p></div>
 <div class="card"><h3>Pre-Opening Support</h3><p>Just opened your business and don’t have time to run it? We keep it running for you.</p></div>
@@ -146,16 +165,21 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <section class="alt">
 <div class="w photo-panel">
 <div>
-<h2>Looking for staff, or looking for a job?</h2>
-<p class="mu">Hiring doesn’t have to be stressful. We provide reliable staffing solutions for businesses and organisations ready to grow. Whether you need top talent or you are searching for your next opportunity, Tee’s Consults is your trusted partner in recruitment.</p>
+<h2>Hiring doesn’t have to be stressful…</h2>
+<p class="mu">We provide reliable staffing solutions for businesses and organisations ready to grow. Whether you need top talent or you are searching for your next opportunity, Tee’s Consults is your trusted partner in recruitment.</p>
 <p><b>Smart hiring starts with Tee’s Consults.</b></p>
+<h3 style="margin-top:22px">Good staff are hard to find</h3>
+<p class="mu">At Tee’s Consults we make hiring easy. We help businesses hire reliable, qualified and experienced professionals without the usual recruitment stress. We connect you to people who fit your team, your goals and your work flow.</p>
+<div class="chips"><span>Professional candidates</span><span>Better staff</span><span>Faster hiring</span><span>Zero stress</span></div>
 </div>
 <img class="photo" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Professionals meeting and discussing work together" loading="lazy">
 <div class="card">
 <h3>For employers</h3>
-<p style="margin-bottom:14px">Recruitment, interview selection, onboarding and staff training, so you get the right team.</p>
-<h3>For job seekers</h3>
-<p>Get connected to employers who are hiring.</p>
+<p style="margin:0 0 12px">Your business is only as strong as the people behind it.</p>
+<p style="margin:0 0 12px">Professional staff don’t just do the job. They elevate your brand, deliver exceptional customer service and experiences, and deliver real growth. From the way they interact with customers to how they represent your brand, the difference is always clear.</p>
+<ul class="ck" style="margin-bottom:12px"><li>Better customer experience</li><li>Stronger brand growth</li><li>Increased sales</li></ul>
+<p style="margin:0 0 12px">Don’t settle for average when excellent is what sets you apart. Let’s help you build a team that works as hard as you do.</p>
+<p style="margin:0;color:var(--tx)"><b>We don’t just send staff. We make sure they’re the right fit in your establishment. Partner with us today for better, smarter and safer hiring.</b></p>
 </div>
 </div>
 </section>
@@ -178,6 +202,10 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <h2>Let’s build your success and excellence</h2>
 <p class="mu">If you are a serious business owner or job seeker and you are ready to work with us, fill the short form below. Our team will see it and call you.</p>
 <form id="f" class="fm" novalidate>
+<input type="hidden" name="access_key" value="370a06b9-5c37-495c-9bd8-8594e685872d">
+<input type="hidden" name="subject" value="New lead from Tee’s Consults landing page">
+<input type="hidden" name="from_name" value="Tee’s Consults Website">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 <label>Full name<input name="name" required autocomplete="name"></label>
 <label>Phone number<input name="phone" type="tel" inputmode="tel" required autocomplete="tel"></label>
 <label>Business name (if you have one)<input name="biz"></label>
@@ -205,7 +233,7 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 <option>Just planning</option>
 </select></label>
 <p class="err" id="err" role="alert"></p>
-<button class="btn b1" type="submit">Send Request</button>
+<button class="btn b1" type="submit" id="sb">Send Request</button>
 </form>
 <p class="or">Or speak to us directly</p>
 <div class="btns" style="justify-content:center;margin-top:12px">
@@ -221,23 +249,23 @@ footer{padding:26px 0;text-align:center;color:var(--mu);font-size:.85rem}
 
 <script>
 (function(){
-var f=document.getElementById('f'),err=document.getElementById('err');
+var f=document.getElementById('f'),err=document.getElementById('err'),sb=document.getElementById('sb'),busy=false;
 f.addEventListener('submit',function(e){
 e.preventDefault();
+if(busy)return;
 var d=f.elements,v=function(n){return (d[n].value||'').trim()};
 if(!v('name')||!v('phone')||!v('svc')||!v('msg')||!v('when')){err.textContent='Please fill in every field marked above before sending.';return}
 if(v('phone').replace(/\D/g,'').length<10){err.textContent='Please enter a correct phone number.';return}
-err.textContent='';
-var t='Hello Tee’s Consults, I want to work with you.\n\n'+
-'Name: '+v('name')+'\n'+
-'Phone: '+v('phone')+'\n'+
-'Business: '+(v('biz')||'Not given')+'\n'+
-'Need: '+v('svc')+'\n'+
-'Start: '+v('when')+'\n'+
-'Details: '+v('msg');
-var u='https://wa.me/2348109459250?text='+encodeURIComponent(t);
-var w=window.open(u,'_blank','noopener');
-if(!w){window.location.href=u}
+err.textContent='';busy=true;sb.disabled=true;sb.textContent='Sending…';
+var o={};new FormData(f).forEach(function(x,k){o[k]=x});
+fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(o)})
+.then(function(r){return r.json()})
+.then(function(j){
+if(!j||!j.success){throw new Error('failed')}
+try{sessionStorage.setItem('tc_lead','1')}catch(x){}
+window.location.href='thank-you.html';
+})
+.catch(function(){busy=false;sb.disabled=false;sb.textContent='Send Request';err.textContent='Your request did not go through. Please check your internet and try again, or call us.'});
 });
 })();
 </script>
